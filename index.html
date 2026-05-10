@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>♡ Mom's Photobooth ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=VT323&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- soft pink grain background -->
+  <div class="grain"></div>
+  <div class="sparkles" aria-hidden="true">
+    <span>✦</span><span>✿</span><span>♡</span><span>✦</span><span>♡</span><span>✿</span><span>✦</span>
+  </div>
+
+  <header class="banner">
+    <p class="banner__kicker">★ Y2K Photobooth ★</p>
+    <h1 class="banner__title">Happy Mother's Day</h1>
+    <p class="banner__sub">click the camera ⤵ &nbsp;a little something for you, Mom</p>
+  </header>
+
+  <main class="stage">
+
+    <!-- gallery sits ABOVE the camera so strips emerge from the top -->
+    <section id="gallery" class="gallery" aria-live="polite">
+      <div class="gallery__empty">
+        <p>your photo strips will print from the camera ↓</p>
+        <p class="gallery__empty-small">(every click = 4 photos + a love note)</p>
+      </div>
+    </section>
+
+    <!-- the camera (your real photo!) -->
+    <div class="camera-zone">
+      <button id="camera" class="camera" aria-label="Take photo strip">
+        <img src="images/camera.png" alt="Cherry red Y2K camera" class="camera__img" />
+        <!-- press-me sticker now hovers ON TOP of the camera, centered -->
+        <span class="camera__sticker">PRESS ME ♡</span>
+      </button>
+      <span class="camera__hint">click anywhere on the camera</span>
+    </div>
+
+    <!-- flash overlay -->
+    <div id="flash" class="flash" aria-hidden="true"></div>
+
+  </main>
+
+  <footer class="footer">
+    <p>made with ♡ &nbsp;·&nbsp; happy mother's day</p>
+  </footer>
+
+  <script src="assets/quotes.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
